@@ -1,0 +1,52 @@
+@import "./bootstrap-grid.min.css";
+@import "./bootstrap.min.css";
+
+body {
+  font-family: "微軟正黑體", verdana;
+  margin: 0;
+}
+
+.header {
+  background-image: url(../image/line.svg);
+  color: #fff;
+  background-color: #0e779f;
+  height: 300px;
+}
+
+@media (min-width: 738px) {
+  .header .h1-title {
+    font-size: 5rem;
+  }
+
+  .header .describe {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 738px) {
+  .header .h1-title {
+    font-size: 2.5rem;
+  }
+
+  .header .describe {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1400px) {
+  .cus-lg {
+    -ms-flex: unset !important;
+    flex: unset !important;
+    max-width: unset !important;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.header .describe .highlight {
+  color: #00ff00;
+}
